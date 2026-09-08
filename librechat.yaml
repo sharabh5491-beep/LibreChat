@@ -1,0 +1,22 @@
+version: 1.1.5
+cache: true
+
+endpoints:
+  google:
+    # This list creates the two separate options in your dropdown menu
+    models:
+      default: [
+        "gemini-3.1-pro-preview", 
+        "gemini-3.7-flash"
+      ]
+      fetch: true
+    # This ensures your 4 API keys rotate for whichever model you pick
+    keyRotation:
+      strategy: "round-robin"
+    # This forces the "Thinking" logic for both models
+    customParameters:
+      thinking_config:
+        thinking_level: "high"
+
+# This locks your 0.35 research baseline globally
+default_temp: 0.35
