@@ -80,6 +80,8 @@ CMD ["npm", "run", "backend"]
 # Optional: for client with nginx routing
 # FROM nginx:stable-alpine AS nginx-client
 # WORKDIR /usr/share/nginx/html
+ENV GOOGLE_KEY=AQ.Ab8RN6I_Bcx9JpeynAwutqGKyk7OQ6zR-4s4MI82HZBj2DbSMg
+ENV GOOGLE_MODELS=gemini-3.1-pro-preview,gemini-3.7-flash
 # COPY --from=node /app/client/dist /usr/share/nginx/html
 # COPY client/nginx.conf /etc/nginx/conf.d/default.conf
 # ENTRYPOINT ["nginx", "-g", "daemon off;"]
