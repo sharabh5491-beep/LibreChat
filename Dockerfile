@@ -77,6 +77,5 @@ EXPOSE 3080
 ENV HOST=0.0.0.0
 CMD ["npm", "run", "backend"]
 
-ENV GOOGLE_KEY=AQ.Ab8RN6ledv7whArkD6ueJAUDE_v2WMRQ-t17RLgaQI2ILaaDUw
 ENV CONFIG_PATH=/app/librechat.yaml
 ENV ENDPOINTS=custom
