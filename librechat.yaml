@@ -3,7 +3,7 @@ cache: true
 
 endpoints:
   custom:
-    - name: "Google Gemini"
+    - name: "Gemini Research"
       apiKey: "${GOOGLE_KEY}"
       baseURL: "https://generativelanguage.googleapis.com/v1beta/openai"
       models:
@@ -14,7 +14,6 @@ endpoints:
         fetch: false
       titleConvo: true
       titleModel: "gemini-3.7-flash"
-      modelDisplayLabel: "Gemini Research Vault"
+      modelDisplayLabel: "Gemini Research"
 
-# Global research temperature
 default_temp: 0.35
