@@ -75,7 +75,4 @@ ENV BUILD_DATE=${BUILD_DATE}
 # Node API setup
 EXPOSE 3080
 ENV HOST=0.0.0.0
-CMD ["npm", "run", "backend"]
-
-ENV CONFIG_PATH=/app/librechat.yaml
-ENV ENDPOINTS=custom
+CMD ["sh", "-c", "export ENDPOINTS=custom; export CONFIG_PATH=/app/librechat.yaml; npm run backend"]
