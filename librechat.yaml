@@ -6,16 +6,15 @@ endpoints:
     - name: "Gemini Research Vault"
       apiKey: "AQ.Ab8RN6ledv7whArkD6ueJAUDE_v2WMRQ-t17RLgaQI2ILaaDUw"
       baseURL: "https://generativelanguage.googleapis.com/v1beta/openai"
+      headers:
+        x-goog-api-key: "AQ.Ab8RN6ledv7whArkD6ueJAUDE_v2WMRQ-t17RLgaQI2ILaaDUw"
       models:
-        default: [
-          "gemini-3.1-pro-preview", 
-          "gemini-3.7-flash",
-          "gemini-1.5-pro",
-          "gemini-1.5-flash"
-        ]
+        default:
+          - "gemini-3.8-flash"
+          - "gemini-3.1-pro-preview"
+          - "gemini-2.5-pro"
+          - "gemini-2.5-flash"
         fetch: false
       titleConvo: true
-      titleModel: "gemini-3.7-flash"
+      titleModel: "gemini-3.8-flash"
       modelDisplayLabel: "Gemini Research Vault"
-
-default_temp: 0.35
