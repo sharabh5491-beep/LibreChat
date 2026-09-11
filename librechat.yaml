@@ -3,17 +3,14 @@ cache: true
 
 endpoints:
   custom:
-    - name: "gemini-custom"
+    - name: "Gemini"
       apiKey: "AQ.Ab8RN6ledv7whArkD6ueJAUDE_v2WMRQ-t17RLgaQI2ILaaDUw"
       baseURL: "https://generativelanguage.googleapis.com/v1beta/openai"
       models:
         default:
           - "gemini-2.5-flash"
           - "gemini-2.5-pro"
-          - "gemini-1.5-pro"
-          - "gemini-1.5-flash"
-          - "gemini-3.8-flash"
         fetch: false
       titleConvo: true
       titleModel: "gemini-2.5-flash"
-      modelDisplayLabel: "Gemini Research Vault"
+      modelDisplayLabel: "Gemini"
